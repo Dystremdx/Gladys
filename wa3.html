@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un campo de flores amarillas, tan hermoso como nuestro amor">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Un Campo de Flores Amarillas para Ti</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #87CEEB, #F0E68C); /* Cielo y tierra */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .campo {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.imgur.com/5lKugA6.jpg') no-repeat center center; /* Imagen de fondo del campo */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .titulo {
+            font-size: 3em;
+            color: #FFD700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .flor {
+            width: 100px;
+            height: 100px;
+            background-image: url('https://i.imgur.com/XHxU9sz.png'); /* Flor amarilla */
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            animation: float 4s ease-in-out infinite;
+            transition: transform 0.3s ease;
+            margin: 10px;
+        }
+
+        .flor:hover {
+            transform: scale(1.2) rotate(10deg); /* Efecto de interacción */
+        }
+
+        /* Animación flotante */
+        @keyframes float {
+            0% { transform: translatey(0px); }
+            50% { transform: translatey(-20px); }
+            100% { transform: translatey(0px); }
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .mensaje {
+            font-size: 1.5em;
+            color: #fff;
+            background: rgba(255, 215, 0, 0.8);
+            padding: 15px 25px;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Pie de página */
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            color: #fff;
+        }
+
+        /* Diseño Responsivo */
+        @media (max-width: 768px) {
+            .titulo {
+                font-size: 2em;
+            }
+
+            .flor {
+                width: 70px;
+                height: 70px;
+            }
+
+            .mensaje {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .titulo {
+                font-size: 1.8em;
+            }
+
+            .flor {
+                width: 60px;
+                height: 60px;
+            }
+
+            .mensaje {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="campo">
+        <h1 class="titulo">Un Campo de Flores Amarillas</h1>
+
+        <!-- Flores interactivas -->
+        <div class="flor"></div>
+        <div class="flor"></div>
+        <div class="flor"></div>
+
+        <!-- Mensaje de amor -->
+        <div class="mensaje">
+            Cada flor es un símbolo de mi amor por ti, Dina. Este campo es nuestro refugio, donde siempre florece nuestro cariño.
+        </div>
+    </div>
+
+    <footer>
+        Con todo mi amor, siempre tuyo, [Tu nombre]
+    </footer>
+
+</body>
+</html>
+
